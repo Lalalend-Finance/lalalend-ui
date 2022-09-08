@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pages/Vault/TransactionForm displays available tokens and locking period correctly 1`] = `"Available MIA100,000 MIA"`;
+
+exports[`pages/Vault/TransactionForm displays available tokens and locking period correctly 2`] = `"Locking period3 days"`;
