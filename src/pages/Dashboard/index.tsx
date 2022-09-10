@@ -99,7 +99,8 @@ const Dashboard: React.FC = () => {
     accountAddress,
   });
   console.log("DATA(assets) FROM CLIENTS/API/USEGETUSERMARKETINFO :: "+ JSON.stringify(assets));
-
+  console.log("userTotalSupplyBalanceCents is : "+ userTotalSupplyBalanceCents);
+  
   return (
     <DashboardUi
       accountAddress={accountAddress}

@@ -5,27 +5,6 @@ import { AbiItem } from 'web3-utils';
 
 import { getWeb3NoAccount } from 'clients/web3';
 
-/* OLD ABIS
-import bep20Abi from 'constants/contracts/abis/bep20.json';
-import comptrollerAbi from 'constants/contracts/abis/comptroller.json';
-import governorBravoDelegateAbi from 'constants/contracts/abis/governorBravoDelegate.json';
-import interestModelAbi from 'constants/contracts/abis/interestModel.json';
-import maximillionAbi from 'constants/contracts/abis/maximillion.json';
-import oracleAbi from 'constants/contracts/abis/oracle.json';
-import vBep20Abi from 'constants/contracts/abis/vBep20.json';
-import vBnbTokenAbi from 'constants/contracts/abis/vBnbToken.json';
-import vaiTokenAbi from 'constants/contracts/abis/vaiToken.json';
-import vaiUnitrollerAbi from 'constants/contracts/abis/vaiUnitroller.json';
-import vaiVaultAbi from 'constants/contracts/abis/vaiVault.json';
-import miaLensAbi from 'constants/contracts/abis/miaLens.json';
-import vrtConverterAbi from 'constants/contracts/abis/vrtConverter.json';
-import vrtTokenAbi from 'constants/contracts/abis/vrtToken.json';
-import vrtVaultAbi from 'constants/contracts/abis/vrtVault.json';
-import miaTokenAbi from 'constants/contracts/abis/miaToken.json';
-import miaVaultAbi from 'constants/contracts/abis/miaVault.json';
-import miaVaultStoreAbi from 'constants/contracts/abis/miaVaultStore.json';
-import miaVestingAbi from 'constants/contracts/abis/miaVesting.json';
-*/
 
 import erc20Abi from 'constants/contracts/abis_evmos/erc20.json';
 import comptrollerAbi from 'constants/contracts/abis_evmos/comptroller.json';
@@ -77,7 +56,6 @@ import {
 } from 'types/contracts_evmos';
 
 import { TokenContract, NTokenContract } from './types';
-//import { getUsdcBnbToken } from 'utilities/getNErc20Token';
 
 const getContract = <T>(abi: AbiItem | AbiItem[], address: string, web3Instance: Web3) => {
   const web3 = web3Instance ?? getWeb3NoAccount();
@@ -123,10 +101,6 @@ export const getNTokenContract = <T extends NTokenId>(
       web3,
     ) as unknown as NTokenContract<T>;
   }
-  /*if(tokenId === 'usdc') {    
-    nErcTokenAddress = getUsdcBnbToken(tokenId).address;
-    console.log(nErcTokenAddress);
-  }*/
 
   return getContract(
     nErc20Abi as AbiItem[],

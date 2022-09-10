@@ -49,7 +49,6 @@ export interface Asset {
 
 export type TokenId = keyof typeof TOKENS_EVMOS;
 export type NTokenId = keyof typeof NTOKENS_EVMOS;
-//export type NTokenIdUsdtBnb = keyof typeof NERC_TOKENS;
 
 
 export interface Token {

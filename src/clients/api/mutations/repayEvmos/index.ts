@@ -40,8 +40,8 @@ const repayEvmos = async ({
         value: amountWithBuffer.toFixed(0),
       });
   } else {
-    const vEvmosContract = getNTokenContract('wevmos', web3);
-    const contractData = vEvmosContract.methods.repayBorrow().encodeABI();
+    const nEvmosContract = getNTokenContract('wevmos', web3);
+    const contractData = nEvmosContract.methods.repayBorrow().encodeABI();
 
     resp = await web3.eth.sendTransaction({
       from: fromAccountAddress,

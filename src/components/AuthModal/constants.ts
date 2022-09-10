@@ -6,8 +6,6 @@ import { Connector } from 'clients/web3';
 
 import { BaseWallet, IntegratedWallet, Wallet } from './types';
 
-export const VENUS_TERMS_OF_SERVICE_URL = 'https://www.swipe.io/terms';
-
 export const WALLETS: Wallet[] = [
   {
     name: t('wallets.metamask'),

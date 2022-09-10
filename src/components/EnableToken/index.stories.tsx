@@ -15,7 +15,7 @@ export default {
 
 export const Disabled = () => (
   <EnableTokenUi
-    title="To withdraw BNB to the Mia Protocol, you need to enable it first."
+    title="To withdraw EVMOS to the Lalalend Protocol, you need to enable it first."
     nTokenId="weth"
     isTokenEnabled={false}
     enableToken={noop}
@@ -26,7 +26,7 @@ export const Disabled = () => (
 
 export const DisabledWithTokenInfo = () => (
   <EnableTokenUi
-    title="To withdraw BNB to the Mia Protocol, you need to enable it first."
+    title="To withdraw EVMOS to the Lalalend Protocol, you need to enable it first."
     nTokenId="weth"
     isTokenEnabled={false}
     tokenInfo={[

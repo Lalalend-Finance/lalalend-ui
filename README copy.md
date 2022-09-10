@@ -1,8 +1,8 @@
-# Venus Protocol
+# Lalalend Protocol
 
 ## WARNING FOR CONTRIBUTORS
 
-The Venus protocol interface is currently being redesigned. At the moment our priorities are
+The Lalalend protocol interface is currently being redesigned. At the moment our priorities are
 refactoring and completing the new site design. We can't guarantee a timely response to unsolicited
 pull requests that are not on our roadmap.
 
@@ -33,7 +33,7 @@ You’ll need to have Node >16 or later version on your local development machin
 
 ## Deployment
 
-To deploy, raise a PR to update image and config at: https://github.com/VenusProtocol/venus-k8s-app
+
 
 ## Local Development
 
@@ -48,22 +48,6 @@ To run local storybook:
 ```
 yarn storybook
 ```
-
-To run dev environment:
-
-```
-docker compose up venus-ui-dev
-```
-
-To run prod environment:
-
-```
-docker compose build && docker compose up venus-ui-prod
-```
-
-## Testing
-
-Tests run in CI on push using Github actions. They are all required to pass.
 
 ### Typescript
 

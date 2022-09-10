@@ -11,4 +11,4 @@ export default {
   decorators: [withCenterStory({ width: 55 })],
 } as ComponentMeta<typeof LayeredValue>;
 
-export const Default = () => <LayeredValue topValue="$10,000" bottomValue="12 BNB" />;
+export const Default = () => <LayeredValue topValue="$10,000" bottomValue="12 EVMOS" />;

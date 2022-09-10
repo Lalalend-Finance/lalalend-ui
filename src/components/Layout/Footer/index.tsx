@@ -10,12 +10,6 @@ import { useGetBlockNumber } from 'clients/api';
 import { Icon } from 'components/Icon';
 import tokenAddresses from 'constants/contracts/addresses/tokens.json';
 
-import {
-  VENUS_DISCORD_URL,
-  VENUS_GITHUB_URL,
-  VENUS_MEDIUM_URL,
-  VENUS_TWITTER_URL,
-} from './constants';
 import { useStyles } from './styles';
 
 export interface FooterUiProps {
