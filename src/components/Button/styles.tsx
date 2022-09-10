@@ -81,7 +81,7 @@ export const styles = ({
 
       :disabled {
         background-color: ${theme.palette.button.main};
-        border-color: orange;
+        border-color: white;
         border: solid 1px transparent;
         background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #e9eca3, #dca3ec);
         background-origin: border-box;

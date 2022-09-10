@@ -22,7 +22,6 @@ export const HistoryTableUi: React.FC<HistoryTableProps> = ({ transactions, isFe
 
   const columns = useMemo(
     () => [
-      { key: 'id', label: t('history.columns.id'), orderable: true, align: 'left' },
       { key: 'type', label: t('history.columns.type'), orderable: true, align: 'left' },
       { key: 'txnHash', label: t('history.columns.txnHash'), orderable: true, align: 'left' },
       { key: 'block', label: t('history.columns.block'), orderable: true, align: 'left' },
@@ -75,12 +74,7 @@ export const HistoryTableUi: React.FC<HistoryTableProps> = ({ transactions, isFe
           (txn.nTokenAddress && getTokenIdFromNAddress(txn.nTokenAddress)) || MIA_TOKEN_ID;
 
         return [
-          {
-            key: 'id',
-            render: () => <Typography variant="small2">{txn.id}</Typography>,
-            value: txn.id,
-            align: 'left',
-          },
+          
           {
             key: 'type',
             render: () => (
@@ -88,7 +82,7 @@ export const HistoryTableUi: React.FC<HistoryTableProps> = ({ transactions, isFe
                 <div css={[styles.whiteText, styles.table, styles.typeCol]}>
                   <Icon name={tokenId} css={styles.icon} />
                   <Typography variant="small2" color="textPrimary">
-                    {eventTranslationKeys[txn.event]}
+                    {txn.event}
                   </Typography>
                 </div>
                 <div css={[styles.cards, styles.cardTitle]}>
@@ -200,6 +194,8 @@ export const HistoryTableUi: React.FC<HistoryTableProps> = ({ transactions, isFe
     [JSON.stringify(transactions)],
   );
 
+  console.log('ROWS FROM HISTORY TABLE ... checlking: '+ JSON.stringify(rows));
+  
   return (
     <Table
       columns={columns}
@@ -209,7 +205,7 @@ export const HistoryTableUi: React.FC<HistoryTableProps> = ({ transactions, isFe
         orderBy: 'created',
         orderDirection: 'desc',
       }}
-      rowKeyIndex={0}
+      rowKeyIndex={1}
       tableCss={styles.table}
       cardsCss={styles.cards}
       css={styles.cardContentGrid}
@@ -218,7 +214,7 @@ export const HistoryTableUi: React.FC<HistoryTableProps> = ({ transactions, isFe
   );
 };
 
-const HistoryTable: React.FC<HistoryTableProps> = ({ transactions, isFetching }) => (
+const HistoryTable: React.FC<HistoryTableProps> = ({ transactions, isFetching }) => (  
   <HistoryTableUi transactions={transactions} isFetching={isFetching} />
 );
 

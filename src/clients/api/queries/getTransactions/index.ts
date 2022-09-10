@@ -55,6 +55,8 @@ const getTransactions = async ({
     },
   });
   const payload = response.data?.data;
+  console.log('PAYLOAD FOR TRANSACTIONS IS : '+ JSON.stringify(payload));
+  
   // @todo Add specific api error handling
   if ('result' in response && response.result === 'error') {
     throw new NError({
@@ -69,6 +71,8 @@ const getTransactions = async ({
   }
   const { limit, page: payloadPage, total } = payload;
   const transactions = payload.result.map(data => formatTransaction(data));
+  console.log("TRANSACTIONS FORMATTED : "+ JSON.stringify(transactions));
+  
   return { limit, page: payloadPage, total, transactions };
 };
 

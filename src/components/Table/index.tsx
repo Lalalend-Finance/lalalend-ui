@@ -130,6 +130,8 @@ export const Table = ({
 
           <TableBody>
             {rows.map((row, idx) => {
+              console.log("ROW FROM TABLE .... IS : "+ row[rowKeyIndex].value);
+              
               const rowKey = `${row[rowKeyIndex].value.toString()}-${idx}-table`;
               return (
                 <TableRow

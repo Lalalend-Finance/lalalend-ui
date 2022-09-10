@@ -17,21 +17,13 @@ const useGetVaults = ({ accountAddress }: { accountAddress?: string }): UseGetVa
   const { data: sebVault, isLoading: isSebVaultLoading } = useGetSebVault({
     accountAddress,
   });
-/*
-  const { data: vrtVault, isLoading: isVrtVaultLoading } = useGetVrtVault({
-    accountAddress,
-  });
-*/
+
   const data: Vault[] = useMemo(() => {
     const allVaults = [...vestingVaults];
 
     if (sebVault) {
       allVaults.push(sebVault);
     }
-/*
-    if (vrtVault) {
-      allVaults.push(vrtVault);
-    }*/
 
     return allVaults;
   }, [JSON.stringify(vestingVaults), JSON.stringify(sebVault)/*, JSON.stringify(vrtVault)*/]);

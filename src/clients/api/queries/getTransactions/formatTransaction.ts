@@ -16,6 +16,7 @@ const formatTransaction = ({
   ...rest
 }: TransactionResponse) => {
   const tokenId = nTokenAddress ? (getTokenIdFromNAddress(nTokenAddress) as TokenId) : MIA_TOKEN_ID;
+  console.log('token Id : '+ tokenId);
   return {
     ...rest,
     amountWei: convertTokensToWei({ value: new BigNumber(amount), tokenId }),
