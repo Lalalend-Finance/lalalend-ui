@@ -24,7 +24,7 @@ export const VaultUi: React.FC<VaultUiProps> = ({ vaults, isInitialLoading }) =>
   if (isInitialLoading || vaults.length === 0) {
     return <Spinner />;
   }
-
+ 
   return (
     <div css={styles.container}>
       {vaults.map(vault => (

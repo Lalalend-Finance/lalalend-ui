@@ -3,7 +3,7 @@
 body {
   /* width */
   &::-webkit-scrollbar {
-    width: 2px;
+    width: 4px;
     height: 5px;
   }
 
@@ -14,13 +14,14 @@ body {
 
   /* Handle */
   &::-webkit-scrollbar-thumb {
-    background: gray;
+    background: rgba(174, 168, 211, 0.9);
   }
 
   /* Handle on hover */
   &::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+   
 }
 
 

@@ -53,7 +53,6 @@ export const useStyles = () => {
     `,
     listItem: css`
       transition: color 2s;
-      color: orange;
       padding: 0;
 
       :hover > a {
@@ -61,7 +60,7 @@ export const useStyles = () => {
       }
       ${theme.breakpoints.down('lg')} {
         :hover {
-          background-color: orange;
+          background-color: #b5bbfd;
         } 
 
         :hover > a {

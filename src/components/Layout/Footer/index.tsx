@@ -43,32 +43,7 @@ export const FooterUi: React.FC<FooterUiProps> = ({ currentBlockNumber }) => {
         </Typography>
       )}
 
-      <div css={styles.links}>
-        <a
-          css={styles.link}
-          href={generateEvmosScanUrl(tokenAddresses.mia[BscChainId.MAINNET])}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Icon name="mia" color={styles.theme.palette.text.primary} size="12px" />
-        </a>
-
-        <a css={styles.link} href={VENUS_MEDIUM_URL} target="_blank" rel="noreferrer">
-          <Icon name="medium" color={styles.theme.palette.text.primary} size="12px" />
-        </a>
-
-        <a css={styles.link} href={VENUS_DISCORD_URL} target="_blank" rel="noreferrer">
-          <Icon name="discord" color={styles.theme.palette.text.primary} size="12px" />
-        </a>
-
-        <a css={styles.link} href={VENUS_TWITTER_URL} target="_blank" rel="noreferrer">
-          <Icon name="twitter" color={styles.theme.palette.text.primary} size="12px" />
-        </a>
-
-        <a css={styles.link} href={VENUS_GITHUB_URL} target="_blank" rel="noreferrer">
-          <Icon name="github" color={styles.theme.palette.text.primary} size="12px" />
-        </a>
-      </div>
+      
     </div>
   );
 };
