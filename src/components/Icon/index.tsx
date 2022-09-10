@@ -81,7 +81,7 @@ export const Icon: React.FC<IconProps> = ({ name, size, color, ...otherProps }) 
   }
   if(name==="seb") {
     return (
-      <img src={sebLogo} width={70} height={70}/>
+      <img src={sebLogo} width={30} height={30} style={{marginRight: "10px"}}/>
     )
   }
 

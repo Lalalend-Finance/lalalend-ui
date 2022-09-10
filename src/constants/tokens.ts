@@ -954,7 +954,7 @@ export const NTOKENS_EVMOS = config.isOnTestnet ?
     address: NERC20_TOKEN_ADDRESSES.mock_osmosis[9000],
     decimals: NERC20_TOKEN_DECIMALS,
   },
-  mockatom: {
+  mockatom: { 
     id: 'mockatom',
     symbol: 'nMockATOM',
     address: NERC20_TOKEN_ADDRESSES.mock_atom[9000],
