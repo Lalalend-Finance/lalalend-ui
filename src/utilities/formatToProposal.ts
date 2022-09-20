@@ -1,7 +1,7 @@
 import BigNumber from 'bignumber.js';
 import { Proposal } from 'types';
 
-import { BLOCK_TIME_MS } from 'constants/bsc';
+import { BLOCK_TIME_MS } from 'constants/evmos';
  
 interface FormatToProposalInput {
   abstainedVotes: string;

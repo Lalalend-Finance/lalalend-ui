@@ -4,7 +4,7 @@ import getProposals, {
   GetProposalsInput,
   GetProposalsOutput,
 } from 'clients/api/queries/getProposals'; 
-import { BLOCK_TIME_MS } from 'constants/bsc';
+import { BLOCK_TIME_MS } from 'constants/evmos';
 import FunctionKey from 'constants/functionKey';
 
 type Options = QueryObserverOptions<

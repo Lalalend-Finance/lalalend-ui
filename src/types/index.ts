@@ -2,11 +2,6 @@ import BigNumber from 'bignumber.js';
 
 import { TOKENS_EVMOS, NTOKENS_EVMOS } from 'constants/tokens';
 
-export enum BscChainId {
-  'MAINNET' = 56,
-  'TESTNET' = 97,
-}
-
 export enum EvmosChainId {
   'MAINNET' = 9001,
   'TESTNET' = 9000,

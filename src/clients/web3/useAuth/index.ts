@@ -1,5 +1,3 @@
-import { NoBscProviderError } from '@binance-chain/bsc-connector';
-import { openInfinityWallet } from '@infinitywallet/infinity-connector';
 import { UnsupportedChainIdError, useWeb3React } from '@web3-react/core';
 import {
   NoEthereumProviderError,
@@ -7,9 +5,7 @@ import {
 } from '@web3-react/injected-connector';
 import {
   UserRejectedRequestError as UserRejectedRequestErrorWalletConnect,
-  WalletConnectConnector,
 } from '@web3-react/walletconnect-connector';
-import config from 'config';
 import { NError, formatNErrorToReadableString } from 'errors';
 import { useCallback, useState } from 'react';
 
@@ -73,9 +69,8 @@ const useAuth = () => {
         ) {
           throw new NError({ type: 'interaction', code: 'authorizeAccess' });
         } else if (
-          error instanceof NoEthereumProviderError ||
-          error instanceof NoBscProviderError
-        ) {
+          error instanceof NoEthereumProviderError        ) 
+        {
           // TODO: log error
           throw new NError({ type: 'interaction', code: 'noProvider' });
         } else {

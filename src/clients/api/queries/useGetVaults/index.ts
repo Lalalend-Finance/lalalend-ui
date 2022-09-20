@@ -29,7 +29,8 @@ const useGetVaults = ({ accountAddress }: { accountAddress?: string }): UseGetVa
   }, [JSON.stringify(vestingVaults), JSON.stringify(sebVault)/*, JSON.stringify(vrtVault)*/]);
 
   const isLoading = isGetVestingVaultsLoading || isSebVaultLoading; //|| isVrtVaultLoading;
-
+  console.log('VAULTS STATE : '+ JSON.stringify(data));
+  
   return {
     data,
     isLoading,

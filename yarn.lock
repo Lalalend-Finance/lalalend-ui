@@ -1319,15 +1319,6 @@
   "resolved" "https://registry.npmjs.org/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz"
   "version" "0.2.3"
 
-"@binance-chain/bsc-connector@^1.0.0":
-  "integrity" "sha512-Id/P/Zs8Cgg+fJv3XN3BVWZB3Pj+VA00flhpkB6K+vUzjMihS+sZFrMYDnjiRfrJgi0ppEMqRsMlOli9+qwxaA=="
-  "resolved" "https://registry.npmjs.org/@binance-chain/bsc-connector/-/bsc-connector-1.0.0.tgz"
-  "version" "1.0.0"
-  dependencies:
-    "@web3-react/abstract-connector" "^6.0.7"
-    "@web3-react/types" "^6.0.7"
-    "tiny-warning" "^1.0.3"
-
 "@chakra-ui/accordion@2.0.10":
   "integrity" "sha512-HD3yJ4LV3S5vMH7DwcwSOPrZ+R6+qzTd7LXYKiUphl1RiUM5h97dbGqpqI+ULjIo0xoOvHTyhvO4ENCRDEYkRg=="
   "resolved" "https://registry.npmjs.org/@chakra-ui/accordion/-/accordion-2.0.10.tgz"

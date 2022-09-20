@@ -11,7 +11,7 @@ import {
   useGetMiaVaultRewardPerBlock, 
   useGetMiaVaultTotalAllocationPoints,
 } from 'clients/api';
-import { BLOCKS_PER_DAY } from 'constants/bsc';
+import { BLOCKS_PER_DAY } from 'constants/evmos';
 import { DAYS_PER_YEAR } from 'constants/daysPerYear';
 import { MIA_TOKEN_ADDRESS, MIA_TOKEN_ID } from 'constants/mia';
 

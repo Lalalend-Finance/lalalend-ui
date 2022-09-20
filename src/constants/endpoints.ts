@@ -2,7 +2,7 @@ import { EvmosChainId } from 'types';
 
 export const API_ENDPOINT_URLS = { 
   [EvmosChainId.MAINNET]: 'https://api.mia.io/api',
-  [EvmosChainId.TESTNET]: 'http://localhost:3001' // todo 'https://testnetapi.mia.io/api',
+  [EvmosChainId.TESTNET]: 'http://localhost:3001'
 };
 
 export const RPC_URLS: {

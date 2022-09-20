@@ -5,7 +5,7 @@ import getProposalState, {
   GetProposalStateOutput,
 } from 'clients/api/queries/getProposalState';
 import { useGovernorBravoDelegateContract } from 'clients/contracts';
-import { BLOCK_TIME_MS } from 'constants/bsc'; 
+import { BLOCK_TIME_MS } from 'constants/evmos'; 
 import FunctionKey from 'constants/functionKey';
 
 type Options = QueryObserverOptions<

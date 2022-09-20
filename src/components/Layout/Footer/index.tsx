@@ -3,12 +3,8 @@ import Typography from '@mui/material/Typography';
 import config from 'config';
 import React from 'react';
 import { useTranslation } from 'translation';
-import { BscChainId } from 'types';
-import { generateEvmosScanUrl } from 'utilities';
 
 import { useGetBlockNumber } from 'clients/api';
-import { Icon } from 'components/Icon';
-import tokenAddresses from 'constants/contracts/addresses/tokens.json';
 
 import { useStyles } from './styles';
 

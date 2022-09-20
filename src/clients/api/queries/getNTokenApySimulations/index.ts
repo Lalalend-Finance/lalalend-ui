@@ -1,6 +1,6 @@
 import BigNumber from 'bignumber.js';
 
-import { BLOCKS_PER_DAY } from 'constants/bsc';
+import { BLOCKS_PER_DAY } from 'constants/evmos';
 import { COMPOUND_MANTISSA } from 'constants/compoundMantissa';
 import { DAYS_PER_YEAR } from 'constants/daysPerYear';
 import { InterestModel } from 'types/contracts_evmos';

@@ -1,6 +1,6 @@
 import BigNumber from 'bignumber.js';
 
-import { BLOCKS_PER_DAY } from 'constants/bsc';
+import { BLOCKS_PER_DAY } from 'constants/evmos';
 import { Comptroller } from 'types/contracts_evmos';
 
 export interface GetMiaSebVaultDailyRateInput {
